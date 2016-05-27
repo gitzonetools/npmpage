@@ -1,0 +1,23 @@
+{
+  "name": "npmpage",
+  "version": "1.0.0",
+  "description": "create pages for npm modules.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "(npmts)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/pushrocks/npmpage.git"
+  },
+  "keywords": [
+    "page",
+    "generator"
+  ],
+  "author": "Lossless GmbH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/pushrocks/npmpage/issues"
+  },
+  "homepage": "https://gitlab.com/pushrocks/npmpage#README"
+}
