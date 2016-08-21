@@ -7,7 +7,8 @@
   "scripts": {
     "test": "(npm run compile && npm run testCli)",
     "compile": "(npmts --notest)",
-    "testCli": "(cd test && node ../dist/index.js)"
+    "testCli": "(cd test && npm install && npmts && node ../dist/index.js)",
+    "setupCheck": "(git clone https://gitlab.com/sandboxzone/sandbox-npmts.git test/)"
   },
   "repository": {
     "type": "git",
@@ -29,9 +30,9 @@
     "early": "^2.0.26",
     "q": "^1.4.1",
     "smartcli": "^1.0.4",
+    "smartfile": "^4.0.13",
     "smartpug": "^1.0.0",
     "typings-global": "^1.0.6"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }

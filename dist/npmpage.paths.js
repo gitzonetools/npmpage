@@ -1,0 +1,3 @@
+"use strict";
+exports.cwd = process.cwd();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnBtcGFnZS5wYXRocy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL3RzL25wbXBhZ2UucGF0aHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUVXLFdBQUcsR0FBRyxPQUFPLENBQUMsR0FBRyxFQUFFLENBQUMifQ==
