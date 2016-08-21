@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "create pages for npm modules.",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
-    "test": "(npmts)"
+    "test": "(npm run compile && npm run testCli)",
+    "compile": "(npmts --notest)",
+    "testCli": "(cd test && node ../dist/index.js)"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,16 @@
   "bugs": {
     "url": "https://gitlab.com/pushrocks/npmpage/issues"
   },
-  "homepage": "https://gitlab.com/pushrocks/npmpage#README"
+  "homepage": "https://gitlab.com/pushrocks/npmpage#README",
+  "dependencies": {
+    "@types/q": "0.x.x",
+    "beautylog": "^5.0.20",
+    "early": "^2.0.26",
+    "q": "^1.4.1",
+    "smartcli": "^1.0.4",
+    "smartpug": "^1.0.0",
+    "typings-global": "^1.0.6"
+  },
+  "devDependencies": {
+  }
 }
