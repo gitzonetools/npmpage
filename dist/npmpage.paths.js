@@ -1,3 +1,7 @@
 "use strict";
+const plugins = require("./npmpage.plugins");
 exports.cwd = process.cwd();
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnBtcGFnZS5wYXRocy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL3RzL25wbXBhZ2UucGF0aHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUVXLFdBQUcsR0FBRyxPQUFPLENBQUMsR0FBRyxFQUFFLENBQUMifQ==
+exports.publicDir = plugins.path.join(exports.cwd, "public/");
+exports.coverageDir = plugins.path.join(exports.cwd, "coverage/");
+exports.docsDir = plugins.path.join(exports.cwd, "docs/");
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnBtcGFnZS5wYXRocy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL3RzL25wbXBhZ2UucGF0aHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLE1BQVksT0FBTyxXQUFNLG1CQUFtQixDQUFDLENBQUE7QUFFbEMsV0FBRyxHQUFHLE9BQU8sQ0FBQyxHQUFHLEVBQUUsQ0FBQztBQUNwQixpQkFBUyxHQUFHLE9BQU8sQ0FBQyxJQUFJLENBQUMsSUFBSSxDQUFDLFdBQUcsRUFBRSxTQUFTLENBQUMsQ0FBQztBQUM5QyxtQkFBVyxHQUFHLE9BQU8sQ0FBQyxJQUFJLENBQUMsSUFBSSxDQUFDLFdBQUcsRUFBRSxXQUFXLENBQUMsQ0FBQztBQUNsRCxlQUFPLEdBQUcsT0FBTyxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsV0FBRyxFQUFFLE9BQU8sQ0FBQyxDQUFDO0FBQzNDIn0=

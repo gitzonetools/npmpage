@@ -5,9 +5,11 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "test": "(npm run compile && npm run testCli)",
+    "test": "(npm run compile && npm run clean && npm run setupCheck && npm run testCli && npm run npmpage)",
     "compile": "(npmts --notest)",
-    "testCli": "(cd test && npm install && npmts && node ../dist/index.js)",
+    "clean": "(rm -rf test/)",
+    "testCli": "(cd test && npm install && npmts)",
+    "npmpage": "(cd test && node ../dist/index.js)",
     "setupCheck": "(git clone https://gitlab.com/sandboxzone/sandbox-npmts.git test/)"
   },
   "repository": {

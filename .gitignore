@@ -1,4 +1,4 @@
 docs/
 coverage/
 node_modules/
-
+test/

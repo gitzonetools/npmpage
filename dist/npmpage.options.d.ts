@@ -1,3 +1,7 @@
 /// <reference types="q" />
 import * as plugins from "./npmpage.plugins";
-export declare let init: () => plugins.q.Promise<{}>;
+export interface INpmpageConfig {
+    coverage: boolean;
+    docs: boolean;
+}
+export declare let init: () => plugins.q.Promise<INpmpageConfig>;
