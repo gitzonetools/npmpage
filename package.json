@@ -4,12 +4,15 @@
   "description": "create pages for npm modules.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "bin": {
+    "npmpage": "dist/cli.js"
+  },
   "scripts": {
     "test": "(npm run compile && npm run clean && npm run setupTest && npm run npmpage)",
     "testShort": "(npm run compile && npm run npmpage)",
     "compile": "(npmts --notest)",
     "clean": "(rm -rf test/)",
-    "npmpage": "(cd test && node ../dist/index.js)",
+    "npmpage": "(cd test && node ../dist/cli.js)",
     "setupTest": "(git clone https://gitlab.com/sandboxzone/sandbox-npmts.git test/ && cd test && npm install && npmts)"
   },
   "repository": {
