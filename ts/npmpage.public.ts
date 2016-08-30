@@ -5,22 +5,15 @@ import * as npmpageOptions from "./npmpage.options";
 // interfaces
 import { INpmpageConfig } from "./npmpage.options"
 
-export let init = (config: INpmpageConfig) => {
+export let init = (configArg: INpmpageConfig) => {
     let done = plugins.q.defer();
-    plugins.smartfile.fs.ensureDirSync(paths.publicDir);
-    plugins.beautylog.ok("created npmpage directory");
-    if (config.coverage) {
+    plugins.smartfile.fs.ensureDirSync(paths.pagesDir);
+    if (configArg.coverage) {
         plugins.smartfile.fs.copySync(
             paths.coverageDir,
-            plugins.path.join(paths.publicDir,"coverage")
+            plugins.path.join(paths.pagesDir,"coverage")
         );
     };
-    if (config.docs) {
-        plugins.smartfile.fs.copySync(
-            paths.docsDir,
-            plugins.path.join(paths.publicDir,"docs")
-        )
-    };
-    done.resolve();
+    done.resolve(configArg);
     return done.promise;
 }

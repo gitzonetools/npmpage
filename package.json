@@ -5,12 +5,12 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "test": "(npm run compile && npm run clean && npm run setupCheck && npm run testCli && npm run npmpage)",
+    "test": "(npm run compile && npm run clean && npm run setupTest && npm run npmpage)",
+    "testShort": "(npm run compile && npm run npmpage)",
     "compile": "(npmts --notest)",
     "clean": "(rm -rf test/)",
-    "testCli": "(cd test && npm install && npmts)",
     "npmpage": "(cd test && node ../dist/index.js)",
-    "setupCheck": "(git clone https://gitlab.com/sandboxzone/sandbox-npmts.git test/)"
+    "setupTest": "(git clone https://gitlab.com/sandboxzone/sandbox-npmts.git test/ && cd test && npm install && npmts)"
   },
   "repository": {
     "type": "git",
@@ -28,9 +28,12 @@
   "homepage": "https://gitlab.com/pushrocks/npmpage#README",
   "dependencies": {
     "@types/q": "0.x.x",
+    "@types/shelljs": "^0.3.30",
     "beautylog": "^5.0.20",
     "early": "^2.0.26",
+    "gitbook-cli": "^2.3.0",
     "q": "^1.4.1",
+    "shelljs": "^0.7.4",
     "smartcli": "^1.0.4",
     "smartfile": "^4.0.13",
     "smartpug": "^1.0.0",

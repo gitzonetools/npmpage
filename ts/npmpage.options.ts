@@ -18,7 +18,7 @@ export let init = () => {
     if (folderArray.indexOf("coverage") != -1) {
         plugins.beautylog.ok("found coverage data");
         npmpageConfig.coverage = true;
-    }
+    };
     if (folderArray.indexOf("docs") != -1) {
         plugins.beautylog.ok("found docs");
         npmpageConfig.docs = true;
