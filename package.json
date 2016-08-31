@@ -1,6 +1,6 @@
 {
   "name": "npmpage",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "create pages for npm modules.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -13,7 +13,7 @@
     "compile": "(npmts --notest)",
     "clean": "(rm -rf test/)",
     "npmpage": "(cd test && node ../dist/cli.js --host gitlab)",
-    "docsSelf":"node ./dist/cli.js",
+    "docsSelf": "node ./dist/cli.js",
     "setupTest": "(git clone https://gitlab.com/sandboxzone/sandbox-npmts.git test/ && cd test && npm install && npmts)"
   },
   "repository": {
