@@ -9,7 +9,7 @@ export let run = (configArg: INpmpageConfig) => {
     if (configArg.docs) {
         plugins.beautylog.log("now compiling gitbook");
         plugins.shelljs.exec(`(cd ./docs && node ${paths.gitBookBin} install)`);
-        plugins.shelljs.exec(`${paths.gitBookBin} build docs/ pages/api/`)
+        plugins.shelljs.exec(`${paths.gitBookBin} build docs/ pages/docs/`)
     }
     done.resolve(configArg);
     return done.promise;
