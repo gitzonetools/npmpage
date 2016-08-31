@@ -1,5 +1,6 @@
 "use strict";
-const plugins = require("./npmpage.plugins");
-let npmpageCli = new plugins.smartcli.Smartcli();
-npmpageCli;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnBtcGFnZS5jbGkuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi90cy9ucG1wYWdlLmNsaS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsTUFBWSxPQUFPLFdBQU0sbUJBQW1CLENBQUMsQ0FBQTtBQUM3QyxJQUFJLFVBQVUsR0FBRyxJQUFJLE9BQU8sQ0FBQyxRQUFRLENBQUMsUUFBUSxFQUFFLENBQUM7QUFFakQsVUFBVSxDQUFBIn0=
+const smartcli_1 = require("smartcli");
+exports.npmpageCli = new smartcli_1.Smartcli();
+exports.npmpageCli.addVersion("beta");
+exports.npmpageCli.startParse();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnBtcGFnZS5jbGkuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi90cy9ucG1wYWdlLmNsaS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBRUEsMkJBQXVCLFVBQVUsQ0FBQyxDQUFBO0FBRXZCLGtCQUFVLEdBQUcsSUFBSSxtQkFBUSxFQUFFLENBQUM7QUFFdkMsa0JBQVUsQ0FBQyxVQUFVLENBQUMsTUFBTSxDQUFDLENBQUM7QUFDOUIsa0JBQVUsQ0FBQyxVQUFVLEVBQUUsQ0FBQyJ9

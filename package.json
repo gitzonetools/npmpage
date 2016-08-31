@@ -12,7 +12,7 @@
     "testShort": "(npm run compile && npm run npmpage)",
     "compile": "(npmts --notest)",
     "clean": "(rm -rf test/)",
-    "npmpage": "(cd test && node ../dist/cli.js)",
+    "npmpage": "(cd test && node ../dist/cli.js --host gitlab)",
     "setupTest": "(git clone https://gitlab.com/sandboxzone/sandbox-npmts.git test/ && cd test && npm install && npmts)"
   },
   "repository": {
