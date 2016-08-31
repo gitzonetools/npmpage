@@ -48,7 +48,7 @@ trigger:
 
 pages:
   image: hosttoday/ht-docker-node:npmpage
-  stage: pages
+  stage: page
   script:
     - npmci command npmpage --host gitlab
   only:
