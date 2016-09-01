@@ -1,11 +1,13 @@
 # npmpage
 npmpage creates nice static pages for your modules.
 
+[![npm](https://push.rocks/assets/repo-header.svg)](https://push.rocks)
+
 ## Availabililty
-[![npm](https://img.shields.io/badge/npm-npmjs.com-blue.svg)](https://www.npmjs.com/package/npmpage)
-[![git](https://img.shields.io/badge/git-gitlab.com-blue.svg)](https://gitlab.com/pushrocks/npmpage)
-[![git](https://img.shields.io/badge/git%20mirror-github.com-blue.svg)](https://github.com/pushrocks/npmpage)
-[![docs](https://img.shields.io/badge/docs-gitlab.io-blue.svg)](https://pushrocks.gitlab.io/npmpage/docs)
+[![npm](https://push.rocks/assets/repo-button-npm.svg)](https://www.npmjs.com/package/npmpage)
+[![git](https://push.rocks/assets/repo-button-git.svg)](https://gitlab.com/pushrocks/npmpage)
+[![git](https://push.rocks/assets/repo-button-mirror.svg)](https://github.com/pushrocks/npmpage)
+[![docs](https://push.rocks/assets/repo-button-docs.svg)](https://pushrocks.gitlab.io/npmpage/docs)
 
 ## Status for master
 [![build status](https://gitlab.com/pushrocks/npmpage/badges/master/build.svg)](https://gitlab.com/pushrocks/npmpage/commits/master)
