@@ -1,8 +1,6 @@
 # npmpage
 npmpage creates nice static pages for your modules.
 
-[![npm](https://push.rocks/assets/repo-header.svg)](https://push.rocks)
-
 ## Availabililty
 [![npm](https://push.rocks/assets/repo-button-npm.svg)](https://www.npmjs.com/package/npmpage)
 [![git](https://push.rocks/assets/repo-button-git.svg)](https://gitlab.com/pushrocks/npmpage)
@@ -29,3 +27,5 @@ By default npmpage will
 * look for a gitbook in the ./docs/ directory and compile it to /pages/docs/
 * look for api docs at ./pages/api/ (api docs should be created customly by typedoc or jsdoc)
 * create a nice page from README with links to the api and gitbook docs
+
+[![npm](https://push.rocks/assets/repo-header.svg)](https://push.rocks)
