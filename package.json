@@ -31,17 +31,19 @@
   },
   "homepage": "https://gitlab.com/pushrocks/npmpage#README",
   "dependencies": {
+    "@types/marked": "0.x.x",
     "@types/q": "0.x.x",
     "@types/shelljs": "^0.3.30",
-    "beautylog": "^5.0.20",
+    "beautylog": "^5.0.23",
     "early": "^2.0.26",
     "gitbook-cli": "^2.3.0",
+    "marked": "^0.3.6",
     "q": "^1.4.1",
     "shelljs": "^0.7.4",
-    "smartcli": "^1.0.4",
-    "smartfile": "^4.0.13",
-    "smartpug": "^1.0.0",
-    "typings-global": "^1.0.6"
+    "smartcli": "^1.0.9",
+    "smartfile": "^4.0.15",
+    "smartpug": "^1.0.3",
+    "typings-global": "^1.0.14"
   },
   "devDependencies": {}
 }

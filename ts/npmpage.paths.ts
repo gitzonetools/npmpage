@@ -10,4 +10,9 @@ export let gitBookBin = plugins.path.join(packageDir,'node_modules/','gitbook-cl
 export let cwd = process.cwd()
 export let pagesDir = plugins.path.join(cwd, 'pages/')
 export let coverageDir = plugins.path.join(cwd, 'coverage/')
+
 export let docsDir = plugins.path.join(cwd, 'docs/')
+export let docsOutputDir = plugins.path.join(cwd, 'pages/')
+
+export let gitbookDir = plugins.path.join(cwd, 'gitbook/')
+export let gitbookOutputDir = plugins.path.join(cwd, 'pages/gitbook/')
