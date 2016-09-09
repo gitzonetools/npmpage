@@ -25,7 +25,7 @@ class Doc {
     writeToDisk(pathArg: string){
         let dirArgResolved = plugins.path.resolve(pathArg)
         let pathArgJoined = plugins.path.join(dirArgResolved,this.name + '.html')
-        plugins.smartfile.memory.toFs(this.html,pathArgJoined)
+        plugins.smartfile.memory.toFsSync(this.html,pathArgJoined)
     }
 }
 
