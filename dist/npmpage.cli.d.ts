@@ -1,2 +1,2 @@
-import { Smartcli } from "smartcli";
+import { Smartcli } from 'smartcli';
 export declare let npmpageCli: Smartcli;

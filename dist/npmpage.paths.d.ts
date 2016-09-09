@@ -4,3 +4,6 @@ export declare let cwd: string;
 export declare let pagesDir: string;
 export declare let coverageDir: string;
 export declare let docsDir: string;
+export declare let docsOutputDir: string;
+export declare let gitbookDir: string;
+export declare let gitbookOutputDir: string;

@@ -22,8 +22,10 @@ class Doc {
     /**
      * writes the Doc to disk
      */
-    writeToDisk(){
-
+    writeToDisk(pathArg: string){
+        let dirArgResolved = plugins.path.resolve(pathArg)
+        let pathArgJoined = plugins.path.join(dirArgResolved,this.name + '.html')
+        plugins.smartfile.memory.toFs(this.html,pathArgJoined)
     }
 }
 
@@ -32,13 +34,14 @@ export let run = (configArg: INpmpageConfig) => {
     if (configArg.docs) {
         plugins.smartfile.fs.copySync('./README.md','./docs/index.md') // makes sure main README is consistent
         docSmartpug = new plugins.smartpug.Smartpug({
-            filePath: plugins.path.join(paths.cwd, 'pug/docs.pug')
+            filePath: plugins.path.join(paths.packageDir, 'pug/docs.pug')
         })
         plugins.beautylog.log('now compiling docs')
         let filesPathArray = plugins.smartfile.fs.listFilesSync(paths.docsDir)
-        for (let filePath in filesPathArray) {
-            let localDoc = new Doc(filePath)
-            localDoc.writeToDisk()
+        for (let filePath of filesPathArray) {
+            let resolvedPath = plugins.path.resolve("./docs/" + filePath)
+            let localDoc = new Doc(resolvedPath)
+            localDoc.writeToDisk(paths.docsOutputDir)
         }
         plugins.beautylog.ok('compiled Docs!')
     }
