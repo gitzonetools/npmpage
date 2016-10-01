@@ -1,18 +1,13 @@
 import * as plugins from './npmpage.plugins'
 
 // package dirs
-export let packageDir = plugins.path.join(__dirname,'../')
-
-// module paths
-export let gitBookBin = plugins.path.join(packageDir,'node_modules/','gitbook-cli/','bin/gitbook.js')
+export let packageDir = plugins.path.join(__dirname,'../../')
 
 // project dirs
 export let cwd = process.cwd()
-export let pagesDir = plugins.path.join(cwd, 'pages/')
-export let coverageDir = plugins.path.join(cwd, 'coverage/')
 
 export let docsDir = plugins.path.join(cwd, 'docs/')
 export let docsOutputDir = plugins.path.join(cwd, 'pages/')
 
-export let gitbookDir = plugins.path.join(cwd, 'gitbook/')
-export let gitbookOutputDir = plugins.path.join(cwd, 'pages/gitbook/')
+export let pagesDir = plugins.path.join(cwd, 'pages/')
+export let coverageDir = plugins.path.join(cwd, 'coverage/')

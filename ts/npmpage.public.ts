@@ -1,8 +1,7 @@
 import * as plugins from './npmpage.plugins'
 import * as paths from './npmpage.paths'
-import * as cli from './npmpage.cli'
 import * as npmpageOptions from './npmpage.options'
-
+import { npmpageCli } from './npmpage.cli'
 // interfaces
 import { INpmpageConfig } from './npmpage.options'
 
@@ -15,7 +14,7 @@ export let init = (configArg: INpmpageConfig) => {
             plugins.path.join(paths.pagesDir,'coverage')
         )
     };
-    if (cli.npmpageCli.argv.host === 'gitlab') {
+    if (npmpageCli.argv.host === 'gitlab') {
         plugins.beautylog.ok('Specified host is GitLab! Thus copying pages/ to public/')
         plugins.smartfile.fs.copySync('./pages','./public')
     } else {

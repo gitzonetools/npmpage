@@ -2,7 +2,7 @@
   "name": "npmpage",
   "version": "1.0.17",
   "description": "create pages for npm modules.",
-  "main": "dist/index.js",
+  "main": "dist/ts/index.js",
   "typings": "dist/index.d.ts",
   "bin": {
     "npmpage": "dist/cli.js"
@@ -12,7 +12,7 @@
     "testShort": "(npm run compile && npm run npmpage)",
     "compile": "(npmts --notest)",
     "clean": "(rm -rf test/)",
-    "npmpage": "(cd test && node ../dist/cli.js --host gitlab)",
+    "npmpage": "(cd test && node ../dist/ts/index.js --host gitlab --serve)",
     "docsSelf": "node ./dist/cli.js",
     "setupTest": "(git clone https://gitlab.com/sandboxzone/sandbox-npmts.git test/ && cd test && npm install && npmts)"
   },
@@ -31,19 +31,33 @@
   },
   "homepage": "https://gitlab.com/pushrocks/npmpage#README",
   "dependencies": {
+    "@angular/common": "2.0.1",
+    "@angular/compiler": "2.0.1",
+    "@angular/core": "2.0.1",
+    "@angular/forms": "2.0.1",
+    "@angular/http": "2.0.1",
+    "@angular/platform-browser": "2.0.1",
+    "@angular/platform-browser-dynamic": "2.0.1",
+    "@angular/router": "3.0.1",
+    "@angular/upgrade": "2.0.1",
     "@types/marked": "0.x.x",
     "@types/q": "0.x.x",
-    "@types/shelljs": "^0.3.30",
+    "@types/shelljs": "^0.3.31",
     "beautylog": "^5.0.23",
-    "early": "^2.0.26",
-    "gitbook-cli": "^2.3.0",
+    "early": "^2.0.35",
+    "lik": "^1.0.23",
     "marked": "^0.3.6",
     "q": "^1.4.1",
     "shelljs": "^0.7.4",
+    "smartbrowser": "^1.0.1",
     "smartcli": "^1.0.9",
-    "smartfile": "^4.0.15",
+    "smartfile": "^4.0.24",
     "smartpug": "^1.0.3",
-    "typings-global": "^1.0.14"
+    "tsn": "^2.0.9",
+    "typings-global": "^1.0.14",
+    "zone.js": "^0.6.25"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "typings-test": "^1.0.3"
+  }
 }

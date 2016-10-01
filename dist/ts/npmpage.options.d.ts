@@ -3,6 +3,6 @@ import * as plugins from './npmpage.plugins';
 export interface INpmpageConfig {
     coverage: boolean;
     docs: boolean;
-    gitbook: boolean;
+    serve: boolean;
 }
-export declare let init: () => plugins.q.Promise<INpmpageConfig>;
+export declare let init: (argvArg: any) => plugins.q.Promise<INpmpageConfig>;

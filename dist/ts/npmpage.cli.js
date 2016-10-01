@@ -1,0 +1,5 @@
+"use strict";
+const smartcli_1 = require("smartcli");
+exports.npmpageCli = new smartcli_1.Smartcli();
+exports.npmpageCli.addVersion('beta');
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnBtcGFnZS5jbGkuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi90cy9ucG1wYWdlLmNsaS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQ0EsdUNBQW1DO0FBQ3hCLFFBQUEsVUFBVSxHQUFHLElBQUksbUJBQVEsRUFBRSxDQUFBO0FBQ3RDLGtCQUFVLENBQUMsVUFBVSxDQUFDLE1BQU0sQ0FBQyxDQUFBIn0=
