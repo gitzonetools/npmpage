@@ -29,4 +29,8 @@ By default npmpage will
 
 > Note: If you have API docs store them at pages/api npmpage will automatically detect them and intergrate it into the menu.
 
+### How does npmpage operate?
+npmpage will compile all your docs into a .json file and then use an Angular2 application to display this data.
+
+
 [![npm](https://push.rocks/assets/repo-header.svg)](https://push.rocks)

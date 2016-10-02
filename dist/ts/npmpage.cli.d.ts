@@ -1,2 +1,1 @@
-import { Smartcli } from 'smartcli';
-export declare let npmpageCli: Smartcli;
+export declare let run: () => void;

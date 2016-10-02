@@ -2,24 +2,15 @@ doctype html
 head
   title #{title}
   link(rel="stylesheet" href="https://push.rocks/assets/css/markdown.css")
+  link(href="https://unpkg.com/@angular/material/core/theming/prebuilt/indigo-pink.css" rel="stylesheet")
   style.
     @import 'https://fonts.googleapis.com/css?family=Roboto';
     body {
       margin:0px;
-      padding:20px;
+      padding:0px;
       background: #fafafa;
-      background-repeat: repeat;
       font-family: 'Roboto', sans-serif;
     }
-  
-  script(src="https://unpkg.com/core-js/client/shim.min.js")
-  script(src="https://unpkg.com/zone.js@latest?main=browser")
-  script(src="https://unpkg.com/reflect-metadata@latest")
-  script(src="https://unpkg.com/systemjs@latest/dist/system.src.js")
-
-  script(src="./app/systemjs.config.js")
-  script.
-      System.import('app').catch(function(err){ console.error(err); });
-    
 body
   npmpage-app
+script(src='/build.js')

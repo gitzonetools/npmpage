@@ -1,4 +1,6 @@
+distweb/
 pages/
 coverage/
 node_modules/
+plr_build/
 test/

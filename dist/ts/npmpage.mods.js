@@ -1,0 +1,5 @@
+"use strict";
+const smartsystem_1 = require("smartsystem");
+exports.modStandard = new smartsystem_1.LazyModule('./mod_standard/index', __dirname);
+exports.modPublish = new smartsystem_1.LazyModule('./mod_publish/index', __dirname);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnBtcGFnZS5tb2RzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vdHMvbnBtcGFnZS5tb2RzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQSw2Q0FBd0M7QUFNN0IsUUFBQSxXQUFXLEdBQUcsSUFBSSx3QkFBVSxDQUFzQixzQkFBc0IsRUFBQyxTQUFTLENBQUMsQ0FBQTtBQUNuRixRQUFBLFVBQVUsR0FBRyxJQUFJLHdCQUFVLENBQXFCLHFCQUFxQixFQUFDLFNBQVMsQ0FBQyxDQUFBIn0=

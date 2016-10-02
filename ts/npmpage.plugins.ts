@@ -13,9 +13,10 @@ marked.setOptions({
   smartypants: false
 })
 export import path = require('path')
+export import projectinfo = require('projectinfo')
+export import shelljs = require('shelljs')
 export import smartcli = require('smartcli')
 export import smartfile = require('smartfile')
-export import shelljs = require('shelljs')
 export import smartbrowser = require('smartbrowser')
 export import smartpug = require('smartpug')
 export import tsn = require('tsn')

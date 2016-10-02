@@ -3,6 +3,9 @@ import * as plugins from './npmpage.plugins'
 // package dirs
 export let packageDir = plugins.path.join(__dirname,'../../')
 
+// packagefiles
+export let webJsBundleFile = plugins.path.join(packageDir,'plr_bundle/build.js')
+
 // project dirs
 export let cwd = process.cwd()
 
