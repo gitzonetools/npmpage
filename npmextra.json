@@ -6,6 +6,12 @@
     "npmpage": {
         "host": "gitlab"
     },
+    "npmci": {
+        "globalNpmTools": [
+            "plr",
+            "npmts"
+        ]
+    },
     "smartjspm": {
         "npm": {
             "@angular/common": "^2.0.1",
