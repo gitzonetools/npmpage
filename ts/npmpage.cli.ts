@@ -16,14 +16,14 @@ export let run = () => {
                 return modStandard.run(configArg)
             }).then((configArg: npmpageOptions.INpmpageConfig) => {
                 if (configArg.publish) {
-                    localCli.triggerCommandByName('publish')
+                    localCli.trigger('publish')
                 }
             }).catch(err => { console.log(err) })
         })
     })
 
     // Publish Task
-    localCli.addCommand({commandName: 'publish'}).then(argvArg => {
+    localCli.addTrigger('publish').subscribe(argvArg => {
         plugins.beautylog.figletSync('npmpage')
         npmpageOptions.run(argvArg).then(configArg => {
             npmpageMods.modPublish.load().then(modPublish => {

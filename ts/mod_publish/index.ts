@@ -13,6 +13,7 @@ export let run = (configArg: INpmpageConfig) => {
                     paths.pagesDir,
                     paths.publicDir
                 )
+                plugins.beautylog.success('published for gitlab!')
                 break
             default:
                 plugins.beautylog.warn(
