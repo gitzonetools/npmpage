@@ -17,6 +17,7 @@ export let run = (configArg: INpmpageConfig) => {
         done.resolve(configArg)
     } else {
         plugins.beautylog.log(`Not serving, since you didn't ask for it`)
+        done.resolve(configArg)
     }
     return done.promise
 }
