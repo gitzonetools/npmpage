@@ -14,7 +14,7 @@ export let run = (configArg: INpmpageConfig) => {
             watchFiles: [paths.pagesDir]
         })
         npmpageSmartbrowser.start()
-        done.resolve()
+        done.resolve(configArg)
     } else {
         plugins.beautylog.log(`Not serving, since you didn't ask for it`)
     }
