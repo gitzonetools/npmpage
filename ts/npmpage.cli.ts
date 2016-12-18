@@ -13,8 +13,12 @@ export let run = () => {
         plugins.beautylog.figletSync('npmpage')
         npmpageOptions.run(argvArg).then(configArg => {
             npmpageMods.modStandard.load().then(modStandard => {
-                modStandard.run(configArg).catch(err => { console.log(err) })
-            })
+                return modStandard.run(configArg)
+            }).then((configArg: npmpageOptions.INpmpageConfig) => {
+                if (configArg.publish) {
+                    localCli.triggerCommandByName('publish')
+                }
+            }).catch(err => { console.log(err) })
         })
     })
 

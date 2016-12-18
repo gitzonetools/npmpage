@@ -10,7 +10,6 @@ import { IMenuItemObject } from '../../angular/app.interfaces'
 let docSmartpug: plugins.smartpug.Smartpug // will be initialized in run()
 let config: INpmpageConfig
 
-
 /**
  * class Binder 
  */
@@ -33,11 +32,9 @@ export class Binder {
      * writes the binder to disk
      */
     writeToDisk() {
-        this.menu.writeToDisk(paths.docsOutputDir)
+        this.menu.writeToDisk(paths.pagesDir)
     }
 }
-
-
 
 /**
  * class Menu
