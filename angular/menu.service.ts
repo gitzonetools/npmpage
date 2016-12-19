@@ -44,7 +44,7 @@ export class MenuService {
      * fetches the menu data from the base url
      */
     private getMenuData = () => {
-        this.http.get('/menu.json')
+        this.http.get('./menu.json')
             .toPromise()
             .then(response => {
                 this.menuData.addArray(response.json().menuItems)
