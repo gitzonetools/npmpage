@@ -1,6 +1,6 @@
 {
   "name": "npmpage",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "create pages for npm modules.",
   "main": "dist/ts/index.js",
   "typings": "dist/ts/index.d.ts",
