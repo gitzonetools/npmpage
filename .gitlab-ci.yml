@@ -47,10 +47,11 @@ trigger:
     - docker
 
 pages:
-  image: hosttoday/ht-docker-node:npmpage
+  image: hosttoday/ht-docker-node:npmci
   stage: page
   script:
-    - npmci command npmpage --host gitlab
+    - npmci command npm install npmpage -g
+    - npmci command npmpage --publish gitlab
   only:
     - tags
   artifacts:
