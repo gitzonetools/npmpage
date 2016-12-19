@@ -102,7 +102,10 @@ export let run = (configArg: INpmpageConfig) => {
         docSmartpug = new plugins.smartpug.Smartpug({
             filePath: plugins.path.join(paths.packageDir, 'pug/docs.pug')
         })
-        plugins.smartfile.memory.toFs(docSmartpug.getHtmlForData({}), plugins.path.join(paths.pagesDir, 'index.html'))
+        plugins.smartfile.memory.toFsSync(
+            docSmartpug.getHtmlForData({}),
+            plugins.path.join(paths.pagesDir, 'index.html')
+        )
         let docsBinder = new Binder(paths.docsDir)
         docsBinder.writeToDisk()
     }
