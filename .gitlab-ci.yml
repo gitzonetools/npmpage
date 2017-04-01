@@ -59,8 +59,8 @@ pages:
   image: hosttoday/ht-docker-node:npmci
   stage: pages
   script:
-    - npmci command yarn global add npmpage
-    - npmci command npmpage --publish gitlab
+    - npmci command npm install -g npmpage
+    - npmci command npmpage
   tags:
     - docker
   only:
