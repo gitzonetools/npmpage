@@ -1,0 +1,29 @@
+{
+  "name": "npmpage",
+  "version": "1.0.0",
+  "description": "easy documentation for npm modules",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "(npmts)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/gitzone/npmpage.git"
+  },
+  "author": "Lossless GmbH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/gitzone/npmpage/issues"
+  },
+  "homepage": "https://gitlab.com/gitzone/npmpage#README",
+  "dependencies": {
+    "smartfile": "^4.1.7",
+    "smarthbs": "^1.0.5",
+    "smartq": "^1.1.1",
+    "typings-global": "^1.0.14"
+  }
+}
