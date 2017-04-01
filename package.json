@@ -4,6 +4,9 @@
   "description": "easy documentation for npm modules",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "bin": {
+    "npmpage": "assets/cli.js"
+  },
   "directories": {
     "test": "test"
   },
