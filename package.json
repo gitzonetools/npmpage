@@ -21,6 +21,7 @@
   },
   "homepage": "https://gitlab.com/gitzone/npmpage#README",
   "dependencies": {
+    "quicksite": "^1.0.19",
     "smartfile": "^4.1.7",
     "smarthbs": "^1.0.5",
     "smartq": "^1.1.1",
