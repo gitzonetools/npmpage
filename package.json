@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "bin": {
-    "npmpage": "assets/cli.js"
+    "npmpage": "dist/cli.js"
   },
   "directories": {
     "test": "test"
