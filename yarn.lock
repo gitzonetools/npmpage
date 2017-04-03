@@ -8,10 +8,6 @@
   dependencies:
     "@types/node" "*"
 
-"@types/handlebars@^4.0.31":
-  version "4.0.31"
-  resolved "https://registry.yarnpkg.com/@types/handlebars/-/handlebars-4.0.31.tgz#a7fba66fafe42713aee88eeca8db91192efe6e72"
-
 "@types/handlebars@^4.0.32":
   version "4.0.32"
   resolved "https://registry.yarnpkg.com/@types/handlebars/-/handlebars-4.0.32.tgz#637e8d945a9354aab47df7125005490fe9f8e592"
@@ -803,7 +799,7 @@ jodid25519@^1.0.0:
   dependencies:
     jsbn "~0.1.0"
 
-js-yaml@^3.7.0, js-yaml@^3.8.1, js-yaml@^3.8.2:
+js-yaml@^3.8.1, js-yaml@^3.8.2:
   version "3.8.2"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.8.2.tgz#02d3e2c0f6beab20248d412c352203827d786721"
   dependencies:
@@ -1239,9 +1235,9 @@ qs@~6.4.0:
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
 
-quicksite@^1.0.19:
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/quicksite/-/quicksite-1.0.19.tgz#f8f90ff682d4ff30efaa43bb5c98a516195629b3"
+quicksite@^1.0.24:
+  version "1.0.24"
+  resolved "https://registry.yarnpkg.com/quicksite/-/quicksite-1.0.24.tgz#9353a2e4f5e684f30eec268f6c8b6c4f9e2682af"
   dependencies:
     "@types/handlebars" "^4.0.32"
     "@types/highlight.js" "^9.1.9"
@@ -1461,24 +1457,7 @@ smartenv@^2.0.0:
     q "^1.4.1"
     typings-global "^1.0.14"
 
-smartfile@^4.1.4, smartfile@^4.1.7:
-  version "4.1.7"
-  resolved "https://registry.yarnpkg.com/smartfile/-/smartfile-4.1.7.tgz#5657bea62ad673d891b2c9a00f5866154e768c3f"
-  dependencies:
-    "@types/fs-extra" "0.x.x"
-    "@types/vinyl" "^2.0.0"
-    fs-extra "^2.0.0"
-    glob "^7.1.1"
-    js-yaml "^3.7.0"
-    require-reload "0.2.2"
-    smartpath "^3.2.7"
-    smartq "^1.0.4"
-    smartrequest "^1.0.4"
-    typings-global "^1.0.14"
-    vinyl "^2.0.1"
-    vinyl-file "^3.0.0"
-
-smartfile@^4.1.8, smartfile@^4.1.9:
+smartfile@^4.1.7, smartfile@^4.1.8, smartfile@^4.1.9:
   version "4.1.9"
   resolved "https://registry.yarnpkg.com/smartfile/-/smartfile-4.1.9.tgz#d789032193a45493607b8b37ff5811942f832008"
   dependencies:
@@ -1502,16 +1481,6 @@ smartfm@^1.0.2:
     gray-matter "^2.1.0"
     typings-global "^1.0.14"
 
-smarthbs@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/smarthbs/-/smarthbs-1.0.5.tgz#39de0b5f34b82a93daa953eefa086c7a1134ca2f"
-  dependencies:
-    "@types/handlebars" "^4.0.31"
-    handlebars "^4.0.6"
-    smartfile "^4.1.4"
-    smartq "^1.0.4"
-    typings-global "^1.0.14"
-
 smarthbs@^1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/smarthbs/-/smarthbs-1.0.8.tgz#9ff4fc2fc0643c83a80a270d3c8ea160d47f5a5d"
@@ -1532,14 +1501,14 @@ smartparam@0.1.1:
     q "^1.4.1"
     typings-global "^1.0.3"
 
-smartpath@^3.2.7, smartpath@^3.2.8:
+smartpath@^3.2.8:
   version "3.2.8"
   resolved "https://registry.yarnpkg.com/smartpath/-/smartpath-3.2.8.tgz#4834bd3a8bae2295baacadba23c87a501952f940"
   dependencies:
     home "^1.0.1"
     typings-global "^1.0.14"
 
-smartq@^1.0.4, smartq@^1.1.0, smartq@^1.1.1:
+smartq@^1.1.0, smartq@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/smartq/-/smartq-1.1.1.tgz#efb358705260d41ae18aef7ffd815f7b6fe17dd3"
   dependencies:
