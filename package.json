@@ -16,7 +16,9 @@
     "localNoFrontend": "(npmts --notest --nodocs && npm run localNpmpage)",
     "localNpmpage": "(cd test && node ../dist/cli.js --publish gitlab --serve)",
     "docsSelf": "node ./dist/cli.js",
-    "setupTest": "(git clone https://gitlab.com/sandboxzone/sandbox-npmts.git test/ && cd test && npm install && npmts)"
+    "setupTest": "(git clone https://gitlab.com/sandboxzone/sandbox-npmts.git test/ && cd test && npm install && npmts)",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -50,9 +52,11 @@
     "smartsystem": "^1.0.12",
     "systemjs": "0.19.41",
     "tsn": "^2.0.13",
-    "typings-global": "^1.0.14"
+    "typings-global": "^1.0.14",
+    "snyk": "^1.70.2"
   },
   "devDependencies": {
     "typings-test": "^1.0.3"
-  }
+  },
+  "snyk": true
 }
